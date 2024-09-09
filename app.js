@@ -48,8 +48,6 @@ function levelUp(){
 
     let randIdx = Math.floor(Math.random()*4);
     
-    // console.log(randIdx);
-    
     gameSeq.push(btns[randIdx]);
     
     let selBtn = document.querySelector(`.${btns[randIdx]}`);
@@ -107,5 +105,3 @@ function reset()
     level = 0;
     started = false;
 }
-
-// using recursion and setTimeout() we can make each btn of gameSeq blink in the same sequence
